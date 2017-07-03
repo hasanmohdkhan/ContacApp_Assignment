@@ -16,16 +16,15 @@ import android.widget.ImageView;
         private Context mContext;
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_1, R.drawable.sample_0,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_1, R.drawable.sample_0,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_1, R.drawable.sample_0,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_1, R.drawable.sample_0,
-            R.drawable.sample_0, R.drawable.sample_0,
-            R.drawable.sample_1, R.drawable.sample_1,
+            R.drawable.sample_0, R.drawable.sample_1,  //1
+            R.drawable.sample_3, R.drawable.sample_4,   //2
+            R.drawable.sample_5, R.drawable.sample_17,   //3
+            R.drawable.sample_7, R.drawable.sample_8,       //4
+            R.drawable.sample_9, R.drawable.sample_10,        //5
+            R.drawable.sample_5, R.drawable.sample_17,            //6
+            R.drawable.sample_7, R.drawable.sample_8,            //7
+            R.drawable.sample_0, R.drawable.sample_1,          //8
+            R.drawable.sample_3, R.drawable.sample_4,
 
     };
 
@@ -51,10 +50,10 @@ import android.widget.ImageView;
             if (convertView == null) {
                 // if it's not recycled, initialize some attributes
                 imageView = new ImageView(mContext);
-                imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
-                imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                imageView.setLayoutParams(new GridView.LayoutParams(300, 300));
+                imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                 imageView.setAdjustViewBounds(true);
-                imageView.setPadding(0, 0, 0, 0);
+                imageView.setPadding(1, 1, 1, 1);
 
             } else {
                 imageView = (ImageView) convertView;

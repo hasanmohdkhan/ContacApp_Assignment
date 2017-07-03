@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hasanzian.contactapp.MainActivity$PlaceholderFragment">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alwaysDrawnWithCache="true"
+        android:clipChildren="true"
+        android:columnWidth="100dp"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:padding="0dp"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        />
+
+
+</LinearLayout>
